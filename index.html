@@ -30,8 +30,8 @@
                         <a class="navbar-brand " href="#">Payment form example</a>
                     </nav>
                     <div class="row pl-3 pr-3 ">
-                        <div class="col-12 col-md-12  ">
-                            <div class=" p-2  mt-2 mb-3 alert alert-danger "> Some fields are missing</div>
+                        <div class="col-12 col-md-12">
+                            <div class="p-2 mt-2 mb-3 alert alert-danger" id="alert">Some fields are missings</div>
                         </div>
 
                         <div class="col-6 col-md-5">Card#
@@ -48,12 +48,12 @@
                         </div>
 
                         <div class="col-12 col-md-6">First name
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" aria-label="Username"
-                                aria-describedby="basic-addon1" value="">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre"
+                                aria-label="Username" aria-describedby="basic-addon1" value="">
                         </div>
                         <div class="col-12 col-md-6">Last name
                             <input type="text" class="form-control" placeholder="" aria-label="Username"
-                                aria-describedby="basic-addon1" id="lastname">
+                                aria-describedby="basic-addon1" value="" id="lastname">
                         </div>
 
                         <div class="col-6 col-md-6">City
@@ -75,18 +75,26 @@
                         <div class="col-6 col-md-6 ">We accept:
 
                             <div class=" row pl-5 pt-3">
-                                <div class="col-6 col-md-2 bg-secondary rounded-left"> <input type="checkbox" id="mastercard"
-                                        aria-label="Radio button for following text input" name="pago" ><i
-                                        class="fab fa-cc-mastercard  pl-2 text-light"></i></div>
-                                <div class="col-6 col-md-2 bg-secondary"> <input type="checkbox"               id="visa"
-                                        aria-label="Radio button for following text input" name="pago" ><i
-                                        class="fab fa-cc-visa  pl-2 text-light"></i></div>
-                                <div class="col-6 col-md-2 bg-secondary"> <input type="checkbox"               id="dinero"
-                                        aria-label="Radio button for following text input" name="pago"><i
-                                        class="fab fa-cc-diners-club text-light pl-2"></i></div>
-                                <div class="col-6 col-md-2 bg-secondary rounded-right"> <input type="checkbox"    id="american"
-                                        aria-label="Radio button for following text input" name="pago"   ><i
-                                        class="fab fa-cc-amex text-light pl-2"></i></div>
+                                <div class="col-6 col-md-2 bg-secondary rounded-left">
+                                    <input type="checkbox" id="mastercard" value="1"
+                                        aria-label="Radio button for following text input" name="pago" checked>
+                                    <i class="fab fa-cc-mastercard  pl-2 text-light"></i>
+                                </div>
+                                <div class="col-6 col-md-2 bg-secondary">
+                                    <input type="checkbox" id="visa" value="2"
+                                        aria-label="Radio button for following text input" name="pago">
+                                    <i class="fab fa-cc-visa  pl-2 text-light"></i>
+                                </div>
+                                <div class="col-6 col-md-2 bg-secondary">
+                                    <input type="checkbox" id="dinero" value="3"
+                                        aria-label="Radio button for following text input" name="pago">
+                                    <i class="fab fa-cc-diners-club text-light pl-2"></i>
+                                </div>
+                                <div class="col-6 col-md-2 bg-secondary rounded-right">
+                                    <input type="checkbox" id="american" value="4"
+                                        aria-label="Radio button for following text input" name="pago">
+                                    <i class="fab fa-cc-amex text-light pl-2"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">Message
